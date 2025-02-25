@@ -27,7 +27,7 @@
 
      <table>
         <tr>
-        <td colspan="4" style="text-align:center;"><img src="{{ asset('storage/siswas/'.$siswas->image) }}" width="120px" hight="120px" alt=""></td>
+        <td colspan="4" style="text-align:center;"><img src="{{ asset('storage/siswas/'.$siswa->image) }}" width="120px" hight="120px" alt=""></td>
         </tr>
         <tr>
             <th colspan="2">Akun Siswa</th>
@@ -35,27 +35,27 @@
         </tr>
         <tr>
             <th>Nama</th>
-            <td>: {{ $siswas->name }}</td>
+            <td>: {{ $siswa->name }}</td>
             <th>Nis</th>
-            <td>: {{ $siswas->nis }}</td>
+            <td>: {{ $siswa->nis }}</td>
         </tr>
         <tr>
             <th>Email</th>
-            <td>: {{ $siswas->email }}</td>
+            <td>: {{ $siswa->email }}</td>
             <th>Kelas</th>
-            <td>: {{ $siswas->tingkatan }} {{ $siswas->jurusan }} {{ $siswas->kelas }}</td>
+            <td>: {{ $siswa->tingkatan }} {{ $siswa->jurusan }} {{ $siswa->kelas }}</td>
         </tr>
         <tr>
             <td></td>
             <td></td>
             <th>No Hp</th>
-            <td>: {{ $siswas->hp }}</td>
+            <td>: {{ $siswa->hp }}</td>
         </tr>
         <tr>
             <td></td>
             <td></td>
             <th>Status</th>
-            @if($siswas->status == 1) :
+            @if($siswa->status == 1) :
             <td>: Aktif</td>
             @else
             <td>: Tidak Aktif</td>
